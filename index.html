@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="./main.js"></script>
+    <title>Veterinaria</title>
+</head>
+<body>
+    <section class="cont_for">
+        <div class="cont_titulo_for">
+            <h1 class="titulo_for">Registro</h1>
+        </div>
+        <div class="cont_nombre">
+            <p class="text_nombre">Nombre de la mascota</p>
+            <input type="text" id="nombreMascota" class="nombreMascota" name="nombreMascota" placeholder="Ingrese el nombre de la mascota">
+        </div>
+        <div class="cont_propietario">
+            <p class="text_propietario">Nombre del propietario</p>
+            <input type="text" id="nombrePropietario" class="nombrePropietario" name="nombrePropietario" placeholder="Ingrese el nombre del propietario">
+        </div>
+        <div class="cont_telefono">
+            <p class="text_telefono">Telefono</p>
+            <input type="text" id="telefono" class="telefono" name="telefono" placeholder="Ingrese el telefono">
+        </div>
+        <div class="cont_mascota">
+            <p class="text_mascota">Tipo de mascota</p>
+            <select name="tipoMascota" id="tipoMascota" class="tipoMascota">
+                <option value="0">Seleccione una opcion</option>
+                <option value="1">Perro</option>
+                <option value="2">Gato</option>
+                <option value="3">Ave</option>
+                <option value="4">Otro</option>
+            </select>
+        </div>
+        <div class="cont_fechaCita">
+            <p class="text_fechaCita">Fecha de la cita</p>
+            <input type="date" id="fechaCita" class="fechaCita" name="fechaCita">
+        </div>
+        <div class="cont_horaCita">
+            <p class="text_horaCita">Hora de la cita</p>
+            <input type="time" id="horaCita" class="horaCita" name="horaCita">
+        </div>
+        <div class="cont_sintomas">
+            <p class="text_sintomas">Sintomas</p>
+            <textarea name="sintomas" id="sintomas" class="sintomas" cols="30" rows="10" placeholder="Ingrese los sintomas"></textarea>
+        </div>
+        <div class="cont_btns_for">
+            <div class="cont_btn_cerrar">
+                <button class="btn_cerrar" onclick="cerrar()">Cerrar</button>
+            </div>
+            <div class="cont_btn_enviar">
+                <button class="btn_enviar" onclick="enviar()">Enviar</button>
+            </div>
+        </div>
+    </section>
+    <section class="info">
+        <div class="cont_titulo">
+            <h1 class="titulo">Veterinaria</h1>
+        </div>
+        <div class="cont_agregar">
+            <div class="cont_btn">
+                <i class="fa-regular fa-square-plus" onclick="registrar()"></i>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
