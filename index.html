@@ -9,6 +9,9 @@
     <title>Veterinaria</title>
 </head>
 <body>
+    <div class="cont_alert">
+        <p class="text_alert"></p>
+    </div>
     <section class="cont_for">
         <div class="cont_titulo_for">
             <h1 class="titulo_for">Registro</h1>
@@ -64,6 +67,31 @@
             <div class="cont_btn">
                 <i class="fa-regular fa-square-plus" onclick="registrar()"></i>
             </div>
+        </div>
+        <div class="cont_filtros">
+            <div class="cont_titulo_filtros">
+                <p class="text_filtros">Filtros:</p>
+            </div>
+            <div class="cont_btn_filtros">
+                <div class="cont_btn_activas">
+                    <button class="btn_activas" onclick="verActivas()">Activas</button>
+                </div>
+                <div class="cont_btn_cerradas">
+                    <button class="btn_cerradas" onclick="verCerradas()">Cerradas</button>
+                </div>
+                <div class="cont_btn_anuladas">
+                    <button class="btn_anuladas" onclick="verAnuladas()">Anuladas</button>
+                </div>
+            </div>
+        </div>
+        <div class="cont_activas">
+            
+        </div>
+        <div class="cont_cerradas">
+
+        </div>
+        <div class="cont_anuladas">
+
         </div>
     </section>
 </body>

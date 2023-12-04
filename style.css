@@ -12,6 +12,24 @@ body{
     background-color: #d3d3d3;
 }
 
+.cont_alert{
+    position: absolute;
+    z-index: 101;
+    top: 100px;
+    background-color: #cce9fc;
+    padding: 20px 5%;
+    right: 10%;
+    width: 25%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.alert2{
+    display: flex;
+}
+
 .cont_for{
     display: flex;
     flex-direction: column;
@@ -19,7 +37,8 @@ body{
     background-color: #85C1E9;
     padding: 8px 1%;
     position: absolute;
-    top: -100vh;
+    left: -100%;
+    transform: translate(-50%);
     transition: all 0.5s;
     width: 25%;
     border-radius: 8px;
@@ -104,4 +123,42 @@ body{
 
 .cont_btn{
     cursor: pointer;
+}
+
+.cont_filtros{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.cont_btn_filtros{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.cont_btn_activas, .cont_btn_anuladas, .cont_btn_cerradas{
+    display: flex;
+    margin: 0 10px;
+}
+
+.cont_activas{
+    display: flex;
+    background-color: antiquewhite;
+    width: 100%;
+    height: 100px;
+}
+
+.cont_anuladas{
+    display: none;
+    background-color: #ffcccb;
+    width: 80%;
+    height: 100px;
+}
+
+.cont_cerradas{
+    display: none;
+    background-color: #ff0000;
+    width: 50%;
+    height: 100px;
 }
