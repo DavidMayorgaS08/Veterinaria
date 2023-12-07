@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <script src="./main.js"></script>
     <title>Veterinaria</title>
 </head>
+
 <body>
     <div class="cont_alert">
         <p class="text_alert"></p>
@@ -18,11 +20,13 @@
         </div>
         <div class="cont_nombre">
             <p class="text_nombre">Nombre de la mascota</p>
-            <input type="text" id="nombreMascota" class="nombreMascota" name="nombreMascota" placeholder="Ingrese el nombre de la mascota">
+            <input type="text" id="nombreMascota" class="nombreMascota" name="nombreMascota"
+                placeholder="Ingrese el nombre de la mascota">
         </div>
         <div class="cont_propietario">
             <p class="text_propietario">Nombre del propietario</p>
-            <input type="text" id="nombrePropietario" class="nombrePropietario" name="nombrePropietario" placeholder="Ingrese el nombre del propietario">
+            <input type="text" id="nombrePropietario" class="nombrePropietario" name="nombrePropietario"
+                placeholder="Ingrese el nombre del propietario">
         </div>
         <div class="cont_telefono">
             <p class="text_telefono">Telefono</p>
@@ -48,7 +52,8 @@
         </div>
         <div class="cont_sintomas">
             <p class="text_sintomas">Sintomas</p>
-            <textarea name="sintomas" id="sintomas" class="sintomas" cols="30" rows="10" placeholder="Ingrese los sintomas"></textarea>
+            <textarea name="sintomas" id="sintomas" class="sintomas" cols="30" rows="10"
+                placeholder="Ingrese los sintomas"></textarea>
         </div>
         <div class="cont_btns_for">
             <div class="cont_btn_cerrar">
@@ -84,55 +89,69 @@
                 </div>
             </div>
         </div>
-        <div class="cont_activas">
-            <!-- <div class="card">
-                <div class="cont_img_card">
-                    <img class="img_mascota_card" src="./img/img gato.jpg">
+        <div class="pre_cont_activas">
+            <div class="cont_titulo_activas">
+                <p class="text_activas">Citas Activas</p>
+            </div>
+            <div class="cont_activas">
+                <div class="card">
+                    <div class="cont_img_card">
+                        <img class="img_mascota_card" src="./img/img gato.jpg">
+                    </div>
+                    <div class="cont_tipo_card">
+                        <p class="text_titulo_tipo_card">Tipo:</p>
+                        <p class="text_tipo_card">${mascota}</p>
+                    </div>
+                    <div class="cont_mascota_card">
+                        <p class="text_titulo_mascota_card">Nombre:</p>
+                        <p class="text_mascota_card">${nombreMascota}</p>
+                    </div>
+                    <div class="cont_propietario_card">
+                        <p class="text_titulo_propietario_card">Propietario:</p>
+                        <p class="text_propietario_card">${nombrePropietario}</p>
+                    </div>
+                    <div class="cont_telefono_card">
+                        <p class="text_titulo_telefono_card">Telefono:</p>
+                        <p class="text_telefono_card">${telefono}</p>
+                    </div>
+                    <div class="cont_fecha_card">
+                        <p class="text_titulo_fecha_card">Fecha:</p>
+                        <p class="text_fecha_card">${fechaCita}</p>
+                    </div>
+                    <div class="cont_hora_card">
+                        <p class="text_titulo_hora_card">Hora:</p>
+                        <p class="text_hora_card">${horaCita}</p>
+                    </div>
+                    <div class="cont_sintomas_card">
+                        <p class="text_titulo_sintomas_card">Sintomas:</p>
+                        <p class="text_sintomas_card">${sintomas}</p>
+                    </div>
+                    <div class="cont_botones_card">
+                        <button class="btn_activar" onclick="abrirCard()">Activar</button>
+                        <button class="btn_cerrar_card" onclick="cerrarCard()">Cerrar</button>
+                        <button class="btn_anular" onclick="anularCard()">Anular</button>
+                        <button class="btn_editar" onclick="editarCard()">Editar</button>
+                    </div>
                 </div>
-                <div class="cont_tipo_card">
-                    <p class="text_titulo_tipo_card">Tipo:</p>
-                    <p class="text_tipo_card">${mascota}</p>
-                </div>
-                <div class="cont_mascota_card">
-                    <p class="text_titulo_mascota_card">Nombre:</p>
-                    <p class="text_mascota_card">${nombreMascota}</p>
-                </div>
-                <div class="cont_propietario_card">
-                    <p class="text_titulo_propietario_card">Propietario:</p>
-                    <p class="text_propietario_card">${nombrePropietario}</p>
-                </div>
-                <div class="cont_telefono_card">
-                    <p class="text_titulo_telefono_card">Telefono:</p>
-                    <p class="text_telefono_card">${telefono}</p>
-                </div>
-                <div class="cont_fecha_card">
-                    <p class="text_titulo_fecha_card">Fecha:</p>
-                    <p class="text_fecha_card">${fechaCita}</p>
-                </div>
-                <div class="cont_hora_card">
-                    <p class="text_titulo_hora_card">Hora:</p>
-                    <p class="text_hora_card">${horaCita}</p>
-                </div>
-                <div class="cont_sintomas_card">
-                    <p class="text_titulo_sintomas_card">Sintomas:</p>
-                    <p class="text_sintomas_card">${sintomas}</p>
-                </div>
-                <div class="cont_botones_card">
-                    <button class="btn_activar" onclick="abrirCard(${registro.id})">Activar</button>
-                    <button class="btn_cerrar_card" onclick="cerrarCard(${registro.id})">Cerrar</button>
-                </div>
-                <div class="cont_botones_card">
-                    <button class="btn_anular" onclick="anularCard(${registro.id})">Anular</button>
-                    <button class="btn_editar" onclick="editarCard(${registro.id})">Editar</button>
-                </div>
-            </div> -->
+            </div>
         </div>
-        <div class="cont_cerradas">
+        <div class="pre_cont_cerradas">
+            <div class="cont_titulo_cerradas">
+                <p class="text_cerradas">Citas Cerradas</p>
+            </div>
+            <div class="cont_cerradas">
 
+            </div>
         </div>
-        <div class="cont_anuladas">
-
+        <div class="pre_cont_anuladas">
+            <div class="cont_titulo_anuladas">
+                <p class="text_anuladas">Citas Anuladas</p>
+            </div>
+            <div class="cont_anuladas">
+                
+            </div>
         </div>
     </section>
 </body>
+
 </html>

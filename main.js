@@ -206,33 +206,33 @@ function renderizarCards() {
 
 
 function verActivas() {
-    let activas = document.querySelector('.cont_activas');
-    let cerradas = document.querySelector('.cont_cerradas');
-    let anuladas = document.querySelector('.cont_anuladas');
+    let activas = document.querySelector('.pre_cont_activas');
+    let cerradas = document.querySelector('.pre_cont_cerradas');
+    let anuladas = document.querySelector('.pre_cont_anuladas');
 
-    activas.style.display = "grid";
+    activas.style.display = "flex";
     cerradas.style.display = "none";
     anuladas.style.display = "none";
 }
 
 function verCerradas() {
-    let activas = document.querySelector('.cont_activas');
-    let cerradas = document.querySelector('.cont_cerradas');
-    let anuladas = document.querySelector('.cont_anuladas');
+    let activas = document.querySelector('.pre_cont_activas');
+    let cerradas = document.querySelector('.pre_cont_cerradas');
+    let anuladas = document.querySelector('.pre_cont_anuladas');
 
     activas.style.display = "none";
-    cerradas.style.display = "grid";
+    cerradas.style.display = "flex";
     anuladas.style.display = "none";
 }
 
 function verAnuladas() {
-    let activas = document.querySelector('.cont_activas');
-    let cerradas = document.querySelector('.cont_cerradas');
-    let anuladas = document.querySelector('.cont_anuladas');
+    let activas = document.querySelector('.pre_cont_activas');
+    let cerradas = document.querySelector('.pre_cont_cerradas');
+    let anuladas = document.querySelector('.pre_cont_anuladas');
 
     activas.style.display = "none";
     cerradas.style.display = "none";
-    anuladas.style.display = "grid";
+    anuladas.style.display = "flex";
 }
 
 function editarCard(id) {

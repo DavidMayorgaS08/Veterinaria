@@ -15,7 +15,7 @@ body{
 .cont_alert{
     position: absolute;
     z-index: 101;
-    top: 100px;
+    top: 200px;
     background-color: #cce9fc;
     padding: 20px 5%;
     right: 10%;
@@ -38,6 +38,7 @@ body{
     padding: 8px 1%;
     position: absolute;
     left: -100%;
+    top: 15px;
     transform: translate(-50%);
     transition: all 0.5s;
     width: 25%;
@@ -142,6 +143,39 @@ body{
     margin: 0 10px;
 }
 
+.btn_activas, .btn_cerradas, .btn_anuladas{
+    padding: 6px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.803);
+    cursor: pointer;
+}
+
+.pre_cont_activas{
+    display: flex;
+    flex-direction: column;
+}
+
+.pre_cont_anuladas{
+    display: none;
+    flex-direction: column;
+}
+
+.pre_cont_cerradas{
+    display: none;
+    flex-direction: column;
+}
+
+.cont_titulo_activas, .cont_titulo_anuladas, .cont_titulo_cerradas{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
 .cont_activas{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -177,6 +211,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 8px;
 }
 
 .img_mascota_card{
@@ -184,6 +219,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 .cont_tipo_card, .cont_mascota_card, .cont_propietario_card, .cont_telefono_card, .cont_fecha_card, .cont_hora_card, .cont_sintomas_card{
