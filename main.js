@@ -137,8 +137,6 @@ function enviar() {
     <div class="cont_botones_card">
         <button class="btn_activar" onclick="abrirCard(${registro.id})">Activar</button>
         <button class="btn_cerrar_card" onclick="cerrarCard(${registro.id})">Cerrar</button>
-    </div>
-    <div class="cont_botones_card">
         <button class="btn_anular" onclick="anularCard(${registro.id})">Anular</button>
         <button class="btn_editar" onclick="editarCard(${registro.id})">Editar</button>
     </div>
@@ -209,7 +207,14 @@ function verActivas() {
     let activas = document.querySelector('.pre_cont_activas');
     let cerradas = document.querySelector('.pre_cont_cerradas');
     let anuladas = document.querySelector('.pre_cont_anuladas');
+    let btnACt = document.querySelector('.btn_activas');
+    let btnCer = document.querySelector('.btn_cerradas');
+    let btnAnu = document.querySelector('.btn_anuladas');
 
+
+    btnACt.style.backgroundColor = "#85C1E9";
+    btnCer.style.backgroundColor = "#ffffff";
+    btnAnu.style.backgroundColor = "#ffffff";
     activas.style.display = "flex";
     cerradas.style.display = "none";
     anuladas.style.display = "none";
@@ -219,7 +224,13 @@ function verCerradas() {
     let activas = document.querySelector('.pre_cont_activas');
     let cerradas = document.querySelector('.pre_cont_cerradas');
     let anuladas = document.querySelector('.pre_cont_anuladas');
+    let btnACt = document.querySelector('.btn_activas');
+    let btnCer = document.querySelector('.btn_cerradas');
+    let btnAnu = document.querySelector('.btn_anuladas');
 
+    btnACt.style.backgroundColor = "#ffffff";
+    btnCer.style.backgroundColor = "#85C1E9";
+    btnAnu.style.backgroundColor = "#ffffff";
     activas.style.display = "none";
     cerradas.style.display = "flex";
     anuladas.style.display = "none";
@@ -229,7 +240,13 @@ function verAnuladas() {
     let activas = document.querySelector('.pre_cont_activas');
     let cerradas = document.querySelector('.pre_cont_cerradas');
     let anuladas = document.querySelector('.pre_cont_anuladas');
+    let btnACt = document.querySelector('.btn_activas');
+    let btnCer = document.querySelector('.btn_cerradas');
+    let btnAnu = document.querySelector('.btn_anuladas');
 
+    btnACt.style.backgroundColor = "#ffffff";
+    btnCer.style.backgroundColor = "#ffffff";
+    btnAnu.style.backgroundColor = "#85C1E9";
     activas.style.display = "none";
     cerradas.style.display = "none";
     anuladas.style.display = "flex";
